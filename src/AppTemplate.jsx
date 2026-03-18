@@ -815,7 +815,10 @@ export default function AppTemplate({ themeName: themeNameProp = null, setThemeN
                 </div>
               ))}
             </div>
-            <div style={{ fontSize: 9, color: t.textLabel, fontFamily: t.name === "clean" ? t.fontSans : t.fontMono, letterSpacing: t.name === "clean" ? 1 : 2, textTransform: "uppercase" }}>Operator Dashboard — v1.0</div>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 3 }}>
+              <div style={{ fontSize: 9, color: t.textLabel, fontFamily: t.name === "clean" ? t.fontSans : t.fontMono, letterSpacing: t.name === "clean" ? 1 : 2, textTransform: "uppercase" }}>Operator Dashboard — v1.0</div>
+              <div style={{ fontSize: 9, color: t.textLabel, fontFamily: t.fontSans, opacity: 0.6 }}>If this project has added value to your life, consider supporting it. Every contributor is added to the Founders Wall. CashApp: <span style={{ color: t.textMuted }}>$HeavenIsGreen</span> — Tyler Choice</div>
+            </div>
           </div>
         </div>
       </div>
